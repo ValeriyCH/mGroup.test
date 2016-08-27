@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProjectsTable extends Migration
+class CreateTableProjects extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,12 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->integer   ('user_id');
+            $table->string    ('name');
+            $table->integer   ('role_id');
+            $table->integer   ('people_count');
+            $table->integer   ('talent_id');
+            $table->dateTime  ('date_start');
         });
     }
 
