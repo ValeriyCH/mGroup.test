@@ -16,10 +16,11 @@ class CreateTableProjects extends Migration
             $table->increments('id');
             $table->integer   ('user_id');
             $table->string    ('name');
-            $table->integer   ('role_id');
+//            $table->integer   ('role_id');
             $table->integer   ('people_count');
             $table->integer   ('talent_id');
             $table->dateTime  ('date_start');
+            $table->timestamps();
         });
     }
 

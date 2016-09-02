@@ -16,7 +16,9 @@ class CreateTableUsers extends Migration
             $table->increments('id');
             $table->string    ('name');
             $table->string    ('company_name');
+            $table->integer   ('role_id');
             $table->string    ('email')->unique();
+            $table->boolean   ('activated')->default(0);
             $table->string    ('password');
             $table->rememberToken();
             $table->timestamps();

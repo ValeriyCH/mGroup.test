@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Helvetica; /* Имя шрифта */
+    src: url(../fonts/HelveticaNeue.ttf); /* Путь к файлу со шрифтом */
+}
+
+/*@font-face*/
+/*{*/
+    /*font-family: Century Gothic;*/
+    /*srs: url('../fonts/CenturyGothicRegular.eot');*/
+    /*src: url('../fonts/CenturyGothicRegular.eot?#iefix')format("embedded-opentype"),*/
+    /*url('../fonts/CenturyGothicRegular.woff')format("woff"),*/
+    /*url('../fonts/GOTHIC.TTF')format("ttf");*/
+/*}*/
